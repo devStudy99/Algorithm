@@ -1,11 +1,11 @@
 function solution(num_list, n) {
     let result = [];
-    let arr = [];
+    let tempArray = [];
     for(let i=0; i<num_list.length; i++){
-        arr.push(num_list[i]);
-        if(arr.length === n){
-            result.push(arr);
-            arr = [];
+        tempArray.push(num_list[i]);
+        if(tempArray.length === n){
+            result.push(tempArray);
+            tempArray = [];
         }
     }
     return result;
