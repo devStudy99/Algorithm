@@ -4,5 +4,6 @@ function solution(rsp) {
         0: 5,
         5: 2
     }
+    // return [...rsp].map((item)=>win[item]).join('');
     return rsp.split('').map((item)=>win[item]).join('');
 }
