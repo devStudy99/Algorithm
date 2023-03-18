@@ -1,3 +1,4 @@
 function solution(box, n) {
-    return ~~(box[0]/n)*~~(box[1]/n)*~~(box[2]/n);
+    let arr = box.map(length=>~~(length/n));
+    return arr[0]*arr[1]*arr[2];
 }
