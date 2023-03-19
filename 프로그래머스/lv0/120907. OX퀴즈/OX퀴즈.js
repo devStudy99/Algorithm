@@ -19,8 +19,7 @@ function solution(quiz) {
                 answer.push("X");
             }
         }        
-        
-        temp = [];
+    
     })
     return answer;
 }
