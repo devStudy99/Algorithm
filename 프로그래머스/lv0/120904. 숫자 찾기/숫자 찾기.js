@@ -1,6 +1,11 @@
 function solution(num, k) {
     
-    const answer = String(num).indexOf(String(k));
+    // const answer = (""+num).indexOf(k);
     
-    return answer === -1 ? -1 : answer+1; 
+    // return answer === -1 ? -1 : answer+1; 
+    
+    const answer = ("A"+num).indexOf(k);
+    
+    return answer;
+    
 }
