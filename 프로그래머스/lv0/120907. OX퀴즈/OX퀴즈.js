@@ -1,25 +1,20 @@
 function solution(quiz) {
-    let temp = [];
     let answer = [];
     
     quiz.map(v=>{
         
-        temp = v.split(" ");
+        const [x, operator, y, , z] = v.split(" ");
         
-        if(temp[1] === "+"){
-            if(Number(temp[0]) + Number(temp[2]) === Number(temp[4])){
-                answer.push("O");
-            }else{
-                answer.push("X");
-            }
+        let sum = 0;
+        
+        if(operator === "+"){
+            sum = Number(x) + Number(y);
         } else {
-            if(Number(temp[0]) - Number(temp[2]) === Number(temp[4])){
-                answer.push("O");
-            }else{
-                answer.push("X");
-            }
+            sum = Number(x) - Number(y);
         }        
-    
+        sum === Number(z) ? answer.push("O") : answer.push("X");
+        
     })
+    
     return answer;
 }
