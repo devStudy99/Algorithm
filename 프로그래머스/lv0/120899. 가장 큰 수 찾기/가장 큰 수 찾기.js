@@ -1,12 +1,14 @@
 function solution(array) {
     
-    let temp = [...array];
-    let answer = [];
+//     let temp = [...array];
+//     let answer = [];
     
-    temp.sort((a,b)=>b-a);
-    answer.push(temp[0]);
-    answer.push(array.indexOf(temp[0]));
+//     temp.sort((a,b)=>b-a);
+//     answer.push(temp[0]);
+//     answer.push(array.indexOf(temp[0]));
     
-    return answer;
+//     return answer;
+    
+    return [Math.max(...array), array.indexOf(Math.max(...array))];
     
 }
