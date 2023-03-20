@@ -1,4 +1,9 @@
 function solution(my_string) {
-    var answer = 0;
-    return answer;
+    
+    const arr = my_string.replaceAll(/[a-zA-z]/g, " ").split(" ");
+    
+    return arr.filter(v=>v!==" ").reduce((acc, cur)=>Number(acc)+Number(cur),0);
+
+
+    
 }
