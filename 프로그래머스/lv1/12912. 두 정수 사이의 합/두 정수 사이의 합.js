@@ -1,12 +1,6 @@
 function solution(a, b) {
     let sum = 0;
-    if(a>b){
-        let c = 0;
-        c = a;
-        a = b;
-        b = c;
-    }
-    for(let i=a; i<=b; i++){
+    for(let i=Math.min(a, b); i<=Math.max(a, b); i++){
         sum += i;
     }
     return sum;
