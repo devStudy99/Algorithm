@@ -1,11 +1,9 @@
 function solution(arr) {
     
-    let answer = [...arr]; 
-    
-    let min = arr.sort((a,b)=>b-a).pop();
+    const min = Math.min(...arr);
         
-    answer = answer.filter(v=>v!==min);
+    arr = arr.filter(v=>v!==min);
 
-    return answer.length === 0 ? [-1] : answer;
+    return arr.length === 0 ? [-1] : arr;
     
 }
