@@ -1,6 +1,5 @@
 function solution(n, m) {
-    
-    let min = 0;
+
     let max = 0;
     
     // 최대공약수(공통된 약수)
@@ -11,8 +10,6 @@ function solution(n, m) {
     }
     
     // 최소공배수(두 수를 곱한 후 최대공약수만큼 나누기)
-    min = n*m/max;
-    
-    return [max, min];
+    return [max, n*m/max];
     
 }
