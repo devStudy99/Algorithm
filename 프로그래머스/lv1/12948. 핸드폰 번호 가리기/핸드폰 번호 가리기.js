@@ -8,7 +8,9 @@ function solution(phone_number) {
     // }
     // return str;
     
-    const str = "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
-    return str;
+    // const str = "*".repeat(phone_number.length - 4) + phone_number.slice(-4);
+    // return str;
+    
+    return [...phone_number].fill("*", 0 ,phone_number.length-4).join("");
  
 }
