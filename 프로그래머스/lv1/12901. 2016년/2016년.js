@@ -9,7 +9,6 @@ function solution(a, b) {
         day += month[i];    
     }
 
-    // 나머지가 1이면 금요일
+    // 나머지가 1이면 금요일 0이면 목요일
     return day%7 !== 0 ? date[day%7-1] : date[6];
-
 }
