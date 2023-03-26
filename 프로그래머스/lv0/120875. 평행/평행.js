@@ -1,7 +1,5 @@
-const getInclination = ([x1, y1], [x2, y2]) => {
-  const dx = x2 - x1;
-  const dy = y2 - y1;
-  return dy / dx;
+const getInclination = (arr1, arr2) => {
+  return (arr2[1] - arr1[1]) / (arr2[0] - arr1[0]);
 };
 
 function solution(dots) {
