@@ -10,5 +10,10 @@ function solution(numlist, n) {
     })
     
     return numlist;
+    
+    // 음수반환 -> a 먼저, 양수반환 -> b 먼저 -> 작은 수 먼저 나오도록
+    // b랑 a의 거리가 같은 상황 -> || 연산자 실행 -> 큰 수 먼저 나오도록
+    // return numlist.sort((a, b) => Math.abs(a - n) - Math.abs(b - n) || b - a);
+
    
 }
