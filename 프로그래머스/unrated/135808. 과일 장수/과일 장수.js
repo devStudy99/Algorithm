@@ -18,12 +18,13 @@ function solution(k, m, score) {
     
     let answer = 0;
     
-    boxArr.map(v=>{
+    boxArr.forEach(v=>{
         if(v.length === m){
             v.sort((a,b)=>a-b);
             answer += v[0] * m;
         }
     })
+
     
     return answer;
 }
