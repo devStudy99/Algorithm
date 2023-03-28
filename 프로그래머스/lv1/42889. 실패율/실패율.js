@@ -1,11 +1,12 @@
 function solution(N, stages) {
     
-    let success = 0;
-    let fail = 0;
-    
     let failureRate = [];
     
     for(let i=1; i<=N; i++){
+        
+        let success = 0;
+        let fail = 0;
+        
         for(let j=0; j<stages.length; j++){
             if(i===stages[j]){
                 fail++;
@@ -19,8 +20,7 @@ function solution(N, stages) {
         }else{
             failureRate.push(fail/(success+fail));
         }
-        success = 0;
-        fail = 0;
+
     }
 
     let answer = [];
