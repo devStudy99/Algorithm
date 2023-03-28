@@ -16,8 +16,7 @@ function solution(n, arr1, arr2) {
 //     }
     
 //     answer.filter((v, i) =>{
-//         answer[i] = v.padStart(n, 0).replace(/0/g, ' ');
-//         answer[i] = answer[i].replace(/[1-9]/g, '#');
+//         answer[i] = v.padStart(n, 0).replace(/0/g, ' ').replace(/[1|2]/g, '#');
 //     })
     
 //     return answer;
