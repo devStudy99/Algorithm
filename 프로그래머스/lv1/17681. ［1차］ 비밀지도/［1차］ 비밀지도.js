@@ -22,5 +22,6 @@ function solution(n, arr1, arr2) {
     
 //     return answer;
     
+    // 하나라도 1이 있으면 1반환 아니면 0반환 -> 앞에 빈공간 0으로 채우기 -> 0인값만 ''해주고 1인값은 '#'해주기
     return arr1.map((a,i)=>(a|arr2[i]).toString(2).padStart(n,0).replace(/0/g,' ').replace(/1/g,'#'))
 }
