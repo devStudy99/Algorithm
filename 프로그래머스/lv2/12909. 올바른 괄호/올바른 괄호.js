@@ -5,11 +5,13 @@ function solution(s){
     for(let i=1; i<s.length; i++){
         if(answer[answer.length-1] === "(" && s[i] === ")"){
             answer.pop();
+        }else if(answer.length === 0 && s[i] === ")"){
+            return false;
         }else{
             answer.push(s[i]);
         }
     }
     
-    return s[0] !== "(" && s[s.length-1] !== ")" ? false : answer.length === 0 ? true : false;
+    return answer.length === 0 ? true : false;
 
 }
