@@ -1,3 +1,13 @@
 function solution(ineq, eq, n, m) {
-    return eval(`${n} ${ineq}${eq==="=" ? "=" :""} ${m}`) ? 1 : 0
+    
+    if (ineq === ">" && eq === "=") {
+        return n >= m ? 1 : 0;
+    } else if (ineq === "<" && eq === "=") {
+        return n <= m ? 1 : 0;
+    } else if (ineq === ">" && eq === "!") {
+        return n > m ? 1 : 0;
+    } else if (ineq === "<" && eq === "!") {
+        return n < m ? 1 : 0;
+    }
+    
 }
